@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Electrolize', sans-serif;
+  font-size: 48px;
+  color: #CC3300;
+  font-weight: bold;
+}
+
+body {
+  background: black;
+}
+
+.container {
+  border: 1px solid black;
+  max-width: 1366px;
+  min-height: 700px;
+  width: 100%;
+  margin: 0 auto;
+  background: radial-gradient(white 50%, #787777);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checklist-container {
+  border: 1px solid black;
+  width: 400px;
+  height: 300px;
+}
+
+.top-3-endangered-container {
+  border: 1px solid black;
+  width: 400px;
+  height: 300px;
+}
+
+.globe-container {
+  border: 1px solid black;
+  width: 600px;
+  height: 600px;
+}
