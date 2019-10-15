@@ -15,10 +15,10 @@ This app retrieve data from IUCN Red List API - v3.
 ## Wireframe
 ![Endangered_species](wireframe.png)
 This is a one page app including:
-a. Topic
-b. Species checkboxes
-c. Top 3 causes in percentage
-d. rotating world map
+- a. Topic
+- b. Species checkboxes
+- c. Top 3 causes in percentage
+- d. rotating world map
 
 ## Design
 An earth with rotating animation. User can click on continents on it to select it; click again to cancel the selection. Would show all the locations on selected continents only. If no continent is selected, would show all. When users click on the checkbox of a species, the locations of them would show on the earth.
@@ -30,7 +30,7 @@ An earth with rotating animation. User can click on continents on it to select i
 * Webpack
 
 ## Timeline
-Day 1: Setup webpack and webpack.config.js. Create basic entry file and skeleton of classes that I may need.
-Day 2: Setup basic html skeleton, retrieve API data.
-Day 3: Rotating earth animation and styling.
-Day 4: Finish styling and add github and linkedin links.
+- Day 1: Setup webpack and webpack.config.js. Create basic entry file and skeleton of classes that I may need.
+- Day 2: Setup basic html skeleton, retrieve API data.
+- Day 3: Rotating earth animation and styling.
+- Day 4: Finish styling and add github and linkedin links.
