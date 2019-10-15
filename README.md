@@ -25,6 +25,12 @@ An earth with rotating animation. User can click on continents on it to select i
 
 ## Architecture & Technologies
 * HTML5, CSS3
-* JavaScript
+* Vanilla JavaScript
 * D3.js
 * Webpack
+
+## Timeline
+Day 1: Setup webpack and webpack.config.js. Create basic entry file and skeleton of classes that I may need.
+Day 2: Setup basic html skeleton, retrieve API data.
+Day 3: Rotating earth animation and styling.
+Day 4: Finish styling and add github and linkedin links.
