@@ -13,7 +13,7 @@ User can do below with this app:
 This app retrieve data from IUCN Red List API - v3.
 
 ## Wireframe
-![Endangered_species](https://wireframe.cc/X36PGf)
+![Endangered_species](wireframe.png)
 This is a one page app including:
 a. Topic
 b. Species checkboxes
