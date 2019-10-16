@@ -23,7 +23,7 @@ body {
   background: radial-gradient(white 50%, #787777);
   border-radius: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -40,7 +40,6 @@ body {
 }
 
 .globe-container {
-  /* border: 1px solid black; */
   width: 600px;
   height: 600px;
   display: flex;

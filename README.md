@@ -31,6 +31,10 @@ An earth with rotating animation. User can click on continents on it to select i
 
 ## Timeline
 - Day 1: Setup webpack and webpack.config.js. Create basic entry file and skeleton of classes that I may need.
-- Day 2: Setup basic html skeleton, retrieve API data.
-- Day 3: Rotating earth animation and styling.
+- Day 2: Rotating earth animation and styling.
+- Day 3: Setup basic html skeleton, retrieve API data.
 - Day 4: Finish styling and add github and linkedin links.
+
+## Upcoming Features
+- Users can click on the globe and spin it as they want.
+- Typewriter animation on the topic.
