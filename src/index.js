@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const width = 600;
-  const height = 600;
-  
+  const width = 610;
+  const height = 610;
+
   const svg = d3
   .select("#globe")
   .append("svg")
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const projection = d3
     .geoOrthographic()
-    .scale(250)
+    .scale(300)
     .translate([width / 2, height / 2])
     .clipAngle(94);
     
@@ -23,33 +23,30 @@ document.addEventListener("DOMContentLoaded", () => {
     .domain([0, width])
     .range([0, 360]);
 
-// test
-
-  function drawMarkers() {
-    const markers = markerGroup.selectAll("circle").data(locations);
+  function drawDots() {
+    const markers = markerGroup.selectAll("circle").data(elephantLocations);
     markers
       .enter()
       .append("circle")
       .merge(markers)
-      .attr("cx", d => projection([d.longitude, d.latitude])[0])
-      .attr("cy", d => projection([d.longitude, d.latitude])[1])
-      .attr("fill", d => {
-        const coordinate = [d.longitude, d.latitude];
+      .attr("cx", d => projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[0])
+      .attr("cy", d => projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[1])
+      .attr("stroke", d => {
+        const coordinate = [d.geometry.coordinates[0], d.geometry.coordinates[1]];
         let gdistance = d3.geoDistance(coordinate, projection.invert([ width / 2, height / 2 ]));
-        return gdistance > 1.57 ? "none" : "red";
+        return gdistance > 1.5 ? "none" : "red";
       })
-      .attr("r", 7);
+      .attr("fill", "transparent")
+      .attr("r", 4);
 
     markerGroup.each(function() {
       this.parentNode.appendChild(this);
     });
   }
 
-  //testend
-
   svg
     .append("path")
-    .datum(topojson.feature(WORLD, WORLD.objects.land))
+    .datum(topojson.feature(world, world.objects.land))
     .attr("d", path);
 
 
@@ -63,10 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
       .selectAll("path")
       .attr("d", path)
       .style("opacity", ".5");
-      drawMarkers();
+      drawDots();
   }
   
-  function drawGraticule() {
+  function drawLines() {
     const graticule = d3.geoGraticule().step([12, 12]);
     svg
       .append("path")
@@ -76,6 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .style("stroke", "#ccc");
   }
 
-  drawGraticule();
+  drawLines();
   setInterval(rotateGlobe, scrollSpeed);
 })

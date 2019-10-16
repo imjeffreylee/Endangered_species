@@ -1,4 +1,4 @@
-const WORLD = {
+const world = {
   type: "Topology",
   objects: {
     land: {

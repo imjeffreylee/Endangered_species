@@ -1,5 +1,5 @@
 const locations = [
-  { latitude: 22, longitude: 88 },
+  { latitude: -2.373046875, longitude: 14.43468021529728 },
   { latitude: 12.61315, longitude: 38.37723 },
   { latitude: -30, longitude: -58 },
   { latitude: -14.270972, longitude: -170.132217 },
