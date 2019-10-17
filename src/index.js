@@ -1,58 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const width = 610;
   const height = 610;
-  let locations = [];  
-
-  const elephant = document.getElementById("elephant");
-  const polarBear = document.getElementById("polar-bear");
-  const panda = document.getElementById("giant-panda");
-  const turtle = document.getElementById("sea-turtle");
-  const rhino = document.getElementById("rhino");
-  const dolphin = document.getElementById("dolphin");
-
-  elephant.addEventListener("change", concatElephant);
-  polarBear.addEventListener("change", concatPolarBear);
-  panda.addEventListener("change", concatPanda);
-  turtle.addEventListener("change", concatTurtle);
-  rhino.addEventListener("change", concatRhino);
-  dolphin.addEventListener("change", concatDolphin);
-
-  function concatElephant() {
-    if (elephant.checked) {
-      locations = locations.concat(elephantLocations);
-    }
-  }
-  function concatPolarBear() {
-    if (polarBear.checked) {
-      locations = locations.concat(polarBearLocations);
-    }
-  }
-  function concatPanda() {
-    if (panda.checked) {
-      locations = locations.concat(giantPandaLocations);
-    }
-  }
-  function concatTurtle() {
-    if (turtle.checked) {
-      locations = locations.concat(seaTurtleLocations);
-    }
-  }
-  function concatRhino() {
-    if (rhino.checked) {
-      locations = locations.concat(rhinoLocations);
-    }
-  }
-  function concatDolphin() {
-    if (dolphin.checked) {
-      locations = locations.concat(dolphinLocations);
-    }
-  }
-
   const svg = d3
-  .select("#globe")
-  .append("svg")
-  .attr("width", width)
-  .attr("height", height);
+    .select("#globe")
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height);
   
   const markerGroup = svg.append('g');
 
@@ -68,10 +21,98 @@ document.addEventListener("DOMContentLoaded", () => {
     .scaleLinear()
     .domain([0, width])
     .range([0, 360]);
+  
+  let locations = [];
+
+  // let locations = elephantLocations
+  //   .concat(polarBearLocations)
+  //   .concat(giantPandaLocations)
+  //   .concat(seaTurtleLocations)
+  //   .concat(rhinoLocations)
+  //   .concat(dolphinLocations);
+
+  const elephant = document.getElementById("elephant");
+  const polarBear = document.getElementById("polar-bear");
+  const panda = document.getElementById("giant-panda");
+  const turtle = document.getElementById("sea-turtle");
+  const rhino = document.getElementById("rhino");
+  const dolphin = document.getElementById("dolphin");
+
+  // elephant.addEventListener("change", drawDots);
+  // polarBear.addEventListener("change", drawDots);
+  // panda.addEventListener("change", drawDots);
+  // turtle.addEventListener("change", drawDots);
+  // rhino.addEventListener("change", drawDots);
+  // dolphin.addEventListener("change", drawDots);
+
+  elephant.addEventListener("change", concatElephant);
+  polarBear.addEventListener("change", concatPolarBear);
+  panda.addEventListener("change", concatPanda);
+  turtle.addEventListener("change", concatTurtle);
+  rhino.addEventListener("change", concatRhino);
+  dolphin.addEventListener("change", concatDolphin);
+
+  function concatElephant() {
+    if (elephant.checked) {
+      locations = locations.concat(elephantLocations);
+    } else {
+      locations = locations.filter(loc => !elephantLocations.includes(loc));
+      drawDots();
+    }
+  }
+
+  function concatPolarBear() {
+    if (polarBear.checked) {
+      locations = locations.concat(polarBearLocations);
+    } else {
+      locations = locations.filter(loc => !polarBearLocations.includes(loc));
+      drawDots();
+    }
+  }
+
+  function concatPanda() {
+    if (panda.checked) {
+      locations = locations.concat(giantPandaLocations);
+    } else {
+      locations = locations.filter(loc => !giantPandaLocations.includes(loc));
+      drawDots();
+    }
+  }
+
+  function concatTurtle() {
+    if (turtle.checked) {
+      locations = locations.concat(seaTurtleLocations);
+    } else {
+      locations = locations.filter(loc => !seaTurtleLocations.includes(loc));
+      drawDots();
+    }
+  }
+
+  function concatRhino() {
+    if (rhino.checked) {
+      locations = locations.concat(rhinoLocations);
+    } else {
+      locations = locations.filter(loc => !rhinoLocations.includes(loc));
+      drawDots();
+    }
+  }
+
+  function concatDolphin() {
+    if (dolphin.checked) {
+      locations = locations.concat(dolphinLocations);
+    } else {
+      locations = locations.filter(loc => !dolphinLocations.includes(loc));
+      drawDots();
+    }
+  }
 
   function drawDots() {
+    if (markerGroup._groups[0][0]) {
+      if (markerGroup._groups[0][0].hasChildNodes()) {
+        markerGroup._groups[0][0].innerHTML = "";
+      }
+    }
     const markers = markerGroup.selectAll("circle").data(locations);
-    // debugger
     markers
       .enter()
       .append("circle")
@@ -80,10 +121,9 @@ document.addEventListener("DOMContentLoaded", () => {
       .attr("cy", d => projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[1])
       .attr("fill", d => {
         const coordinate = [d.geometry.coordinates[0], d.geometry.coordinates[1]];
-        let gdistance = d3.geoDistance(coordinate, projection.invert([ width / 2, height / 2 ]));
-        return gdistance > 1.5 ? "none" : "red";
+        let distance = d3.geoDistance(coordinate, projection.invert([ width / 2, height / 2 ]));
+        return distance > 1.5 ? "none" : "red";
       })
-      // .attr("fill", "transparent")
       .attr("r", 3);
 
     markerGroup.each(function() {
@@ -97,6 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .attr("d", path);
 
 
+  // let scrollSpeed = 5000;
   let scrollSpeed = 50;
   let current = 0;
 
