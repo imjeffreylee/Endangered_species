@@ -1,6 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
   const width = 610;
   const height = 610;
+  let locations = [];  
+
+  const elephant = document.getElementById("elephant");
+  const polarBear = document.getElementById("polar-bear");
+  const panda = document.getElementById("giant-panda");
+  const turtle = document.getElementById("sea-turtle");
+  const rhino = document.getElementById("rhino");
+  const dolphin = document.getElementById("dolphin");
+
+  elephant.addEventListener("change", concatElephant);
+  polarBear.addEventListener("change", concatPolarBear);
+  panda.addEventListener("change", concatPanda);
+  turtle.addEventListener("change", concatTurtle);
+  rhino.addEventListener("change", concatRhino);
+  dolphin.addEventListener("change", concatDolphin);
+
+  function concatElephant() {
+    if (elephant.checked) {
+      locations = locations.concat(elephantLocations);
+    }
+  }
+  function concatPolarBear() {
+    if (polarBear.checked) {
+      locations = locations.concat(polarBearLocations);
+    }
+  }
+  function concatPanda() {
+    if (panda.checked) {
+      locations = locations.concat(giantPandaLocations);
+    }
+  }
+  function concatTurtle() {
+    if (turtle.checked) {
+      locations = locations.concat(seaTurtleLocations);
+    }
+  }
+  function concatRhino() {
+    if (rhino.checked) {
+      locations = locations.concat(rhinoLocations);
+    }
+  }
+  function concatDolphin() {
+    if (dolphin.checked) {
+      locations = locations.concat(dolphinLocations);
+    }
+  }
 
   const svg = d3
   .select("#globe")
@@ -24,7 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
     .range([0, 360]);
 
   function drawDots() {
-    const markers = markerGroup.selectAll("circle").data(rhinoLocations);
+    const markers = markerGroup.selectAll("circle").data(locations);
+    // debugger
     markers
       .enter()
       .append("circle")
@@ -69,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .append("path")
       .datum(graticule)
       .attr("d", path)
-      // .style("fill", "#fff")
+      .style("fill", "#fff")
       .style("stroke", "#ccc");
   }
 
