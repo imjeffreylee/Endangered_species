@@ -24,20 +24,20 @@ document.addEventListener("DOMContentLoaded", () => {
     .range([0, 360]);
 
   function drawDots() {
-    const markers = markerGroup.selectAll("circle").data(elephantLocations);
+    const markers = markerGroup.selectAll("circle").data(rhinoLocations);
     markers
       .enter()
       .append("circle")
       .merge(markers)
       .attr("cx", d => projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[0])
       .attr("cy", d => projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[1])
-      .attr("stroke", d => {
+      .attr("fill", d => {
         const coordinate = [d.geometry.coordinates[0], d.geometry.coordinates[1]];
         let gdistance = d3.geoDistance(coordinate, projection.invert([ width / 2, height / 2 ]));
         return gdistance > 1.5 ? "none" : "red";
       })
-      .attr("fill", "transparent")
-      .attr("r", 4);
+      // .attr("fill", "transparent")
+      .attr("r", 3);
 
     markerGroup.each(function() {
       this.parentNode.appendChild(this);

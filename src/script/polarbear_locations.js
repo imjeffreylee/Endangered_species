@@ -1,10 +1,10 @@
-const elephantLocations = [
+const polarBearLocations = [
       {
         type: "Feature",
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [-2.373046875, 14.43468021529728]
+          coordinates: [182.28515624999997, 67.13582938531948]
         }
       },
       {
@@ -12,7 +12,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [-3.69140625, 11.695272733029402]
+          coordinates: [172.96875, 68.84766505841037]
         }
       },
       {
@@ -20,7 +20,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [-3.515625, 8.928487062665504]
+          coordinates: [163.125, 68.97416358340674]
         }
       },
       {
@@ -28,7 +28,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [1.9335937499999998, 11.350796722383672]
+          coordinates: [153.6328125, 70.37785394109224]
         }
       },
       {
@@ -36,7 +36,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [1.142578125, 8.494104537551882]
+          coordinates: [143.61328125, 71.30079291637452]
         }
       },
       {
@@ -44,7 +44,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [-1.845703125, 7.449624260197816]
+          coordinates: [134.296875, 70.67088107015755]
         }
       },
       {
@@ -52,7 +52,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [-6.50390625, 5.878332109674327]
+          coordinates: [124.45312499999999, 71.91088787611527]
         }
       },
       {
@@ -60,7 +60,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [18.45703125, 12.039320557540572]
+          coordinates: [114.08203125, 72.55449849665266]
         }
       },
       {
@@ -68,7 +68,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [17.314453125, 9.622414142924805]
+          coordinates: [177.18749999999997, 65.58572002329473]
         }
       },
       {
@@ -76,7 +76,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [19.775390625, 9.535748998133627]
+          coordinates: [175.95703125, 63.31268278043484]
         }
       },
       {
@@ -84,7 +84,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [20.214843749999996, 8.059229627200192]
+          coordinates: [109.3359375, 75.58493740869223]
         }
       },
       {
@@ -92,7 +92,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [21.796875, 8.928487062665504]
+          coordinates: [100.1953125, 75.45307133006602]
         }
       },
       {
@@ -100,7 +100,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [23.203125, 4.12728532324537]
+          coordinates: [91.58203125, 74.30735341486248]
         }
       },
       {
@@ -108,7 +108,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [25.048828125, 4.565473550710278]
+          coordinates: [84.55078125, 72.60712040027555]
         }
       },
       {
@@ -116,7 +116,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [26.982421875, 4.8282597468669755]
+          coordinates: [103.18359375, 73.72659470212253]
         }
       },
       {
@@ -124,7 +124,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [28.564453125, 4.214943141390651]
+          coordinates: [92.46093749999999, 72.55449849665266]
         }
       },
       {
@@ -132,7 +132,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [10.458984375, 0.4394488164139768]
+          coordinates: [79.8046875, 70.61261423801925]
         }
       },
       {
@@ -140,7 +140,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [10.458984375, -0.7031073524364783]
+          coordinates: [75.234375, 69.47296854140573]
         }
       },
       {
@@ -148,7 +148,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [12.568359375, 1.0546279422758869]
+          coordinates: [69.60937499999999, 69.47296854140573]
         }
       },
       {
@@ -156,7 +156,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [29.003906249999996, -0.2636709443366629]
+          coordinates: [62.40234375, 67.941650035336]
         }
       },
       {
@@ -164,7 +164,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [31.772460937500004, 2.3723687086440504]
+          coordinates: [56.07421875, 67.2720426739952]
         }
       },
       {
@@ -172,7 +172,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [23.90625, -1.0546279422758742]
+          coordinates: [54.84375, 72.97118902284586]
         }
       },
       {
@@ -180,7 +180,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [26.894531249999996, 0.9228116626857066]
+          coordinates: [60.1171875, 75.45307133006602]
         }
       },
       {
@@ -188,7 +188,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [27.6416015625, 2.5479878714713835]
+          coordinates: [15.1171875, 78.76779175784321]
         }
       },
       {
@@ -196,7 +196,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [20.3466796875, -1.9332268264771106]
+          coordinates: [22.8515625, 79.68718415450823]
         }
       },
       {
@@ -204,7 +204,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [19.775390625, -2.5040852618529215]
+          coordinates: [57.65624999999999, 80.7887954036286]
         }
       },
       {
@@ -212,7 +212,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [20.7861328125, -2.811371193331128]
+          coordinates: [94.39453125, 80.4157074446218]
         }
       },
       {
@@ -220,7 +220,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [34.98046875, -2.460181181020993]
+          coordinates: [97.91015624999999, 79.26996163854979]
         }
       },
       {
@@ -228,7 +228,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [36.73828124999999, -0.04394530819134536]
+          coordinates: [103.0078125, 78.52557254138316]
         }
       },
       {
@@ -236,7 +236,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [38.0126953125, -3.0308121226643703]
+          coordinates: [140.2734375, 75.36450565060706]
         }
       },
       {
@@ -244,7 +244,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [33.2666015625, -6.0968598188879355]
+          coordinates: [66.4453125, 76.3518964311259]
         }
       },
       {
@@ -252,7 +252,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [32.3876953125, -6.795535025719518]
+          coordinates: [48.1640625, 80.503112101851]
         }
       },
       {
@@ -260,7 +260,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [33.7060546875, -7.362466865535738]
+          coordinates: [65.21484375, 66.01801815922045]
         }
       },
       {
@@ -268,7 +268,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [37.70507812499999, -10.228437266155943]
+          coordinates: [70.6640625, 66.99884379185184]
         }
       },
       {
@@ -276,7 +276,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [37.6171875, -12.46876014482322]
+          coordinates: [79.62890625, 68.2042121888185]
         }
       },
       {
@@ -284,7 +284,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [32.08007812499999, -12.039320557540572]
+          coordinates: [-46.05468749999999, 63.074865690586634]
         }
       },
       {
@@ -292,7 +292,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [32.16796875, -15.029685756555674]
+          coordinates: [-47.98828124999999, 66.79190947341796]
         }
       },
       {
@@ -300,7 +300,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [30.05859375, -15.623036831528252]
+          coordinates: [-49.04296875, 70.4367988185464]
         }
       },
       {
@@ -308,7 +308,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [20.126953125, -17.224758206624628]
+          coordinates: [-52.3828125, 72.97118902284586]
         }
       },
       {
@@ -316,7 +316,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [22.939453125, -17.811456088564473]
+          coordinates: [-55.1953125, 75.27541260821627]
         }
       },
       {
@@ -324,7 +324,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [25.48828125, -18.81271785640776]
+          coordinates: [-61.52343749999999, 76.67978490310692]
         }
       },
       {
@@ -332,7 +332,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [13.798828125, -18.895892559415024]
+          coordinates: [-66.26953125, 78.09829559916763]
         }
       },
       {
@@ -340,7 +340,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [25.839843749999996, -14.604847155053898]
+          coordinates: [-61.87499999999999, 79.33521923837228]
         }
       },
       {
@@ -348,7 +348,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [31.289062500000004, -24.126701958681668]
+          coordinates: [-62.9296875, 80.56094264037623]
         }
       },
       {
@@ -356,7 +356,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [29.443359375, -30.67571540416773]
+          coordinates: [-57.65624999999999, 81.38765019536312]
         }
       },
       {
@@ -364,7 +364,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [30.05859375, 17.476432197195518]
+          coordinates: [-50.09765625, 81.56996820323275]
         }
       },
       {
@@ -372,7 +372,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [80.771484375, 8.754794702435618]
+          coordinates: [-43.59375, 81.87364125482827]
         }
       },
       {
@@ -380,7 +380,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [81.298828125, 7.623886853120049]
+          coordinates: [-40.95703125, 82.78747560323013]
         }
       },
       {
@@ -388,7 +388,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [81.4306640625, 6.882800241767556]
+          coordinates: [-33.92578125, 83.15311098437887]
         }
       },
       {
@@ -396,7 +396,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [77.0361328125, 8.928487062665504]
+          coordinates: [-27.59765625, 82.83148023336858]
         }
       },
       {
@@ -404,7 +404,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [76.5966796875, 10.31491928581316]
+          coordinates: [-24.43359375, 82.33238201413792]
         }
       },
       {
@@ -412,7 +412,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [75.89355468749999, 12.08229583736359]
+          coordinates: [-27.773437499999996, 81.74845396137906]
         }
       },
       {
@@ -420,7 +420,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [75.234375, 13.197164523281993]
+          coordinates: [-24.2578125, 81.28171699935012]
         }
       },
       {
@@ -428,7 +428,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [76.9921875, 12.85464890558895]
+          coordinates: [-20.91796875, 79.90515411752526]
         }
       },
       {
@@ -436,7 +436,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [74.0478515625, 15.665354182093287]
+          coordinates: [-15.644531250000002, 81.28171699935012]
         }
       },
       {
@@ -444,7 +444,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [74.6630859375, 14.732386081418454]
+          coordinates: [-17.402343749999996, 80.61842419685506]
         }
       },
       {
@@ -452,7 +452,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [86.396484375, 21.453068633086783]
+          coordinates: [-22.5, 78.97138592818217]
         }
       },
       {
@@ -460,7 +460,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [85.78125, 20.92039691397189]
+          coordinates: [-23.5546875, 77.87881372624746]
         }
       },
       {
@@ -468,7 +468,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [85.166015625, 20.262197124246534]
+          coordinates: [-24.08203125, 76.63922560965885]
         }
       },
       {
@@ -476,7 +476,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [85.5615234375, 22.51255695405145]
+          coordinates: [-24.08203125, 75.23066741281573]
         }
       },
       {
@@ -484,7 +484,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [84.4189453125, 19.80805412808859]
+          coordinates: [-24.2578125, 73.72659470212253]
         }
       },
       {
@@ -492,7 +492,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [81.6943359375, 29.11377539511439]
+          coordinates: [-26.3671875, 71.74643171904148]
         }
       },
       {
@@ -500,7 +500,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [83.84765625, 28.304380682962783]
+          coordinates: [-27.94921875, 69.65708627301174]
         }
       },
       {
@@ -508,7 +508,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [86.0009765625, 27.176469131898898]
+          coordinates: [-32.51953125, 68.00757101804004]
         }
       },
       {
@@ -516,7 +516,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [87.451171875, 27.01998400798257]
+          coordinates: [-38.84765625, 66.08936427047088]
         }
       },
       {
@@ -524,7 +524,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [79.5849609375, 29.611670115197377]
+          coordinates: [-74.53125, 81.99694184598178]
         }
       },
       {
@@ -532,7 +532,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [78.837890625, 29.99300228455108]
+          coordinates: [-85.078125, 80.84490140679905]
         }
       },
       {
@@ -540,7 +540,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [78.0908203125, 30.259067203213018]
+          coordinates: [-74.1796875, 80.64703474739618]
         }
       },
       {
@@ -548,7 +548,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [94.921875, 18.187606552494625]
+          coordinates: [-80.68359375, 78.76779175784321]
         }
       },
       {
@@ -556,7 +556,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [94.921875, 17.14079039331665]
+          coordinates: [-93.1640625, 79.30263962053658]
         }
       },
       {
@@ -564,7 +564,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [94.39453125, 19.394067895396613]
+          coordinates: [-106.5234375, 77.73028235402455]
         }
       },
       {
@@ -572,7 +572,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [92.197265625, 23.120153621695614]
+          coordinates: [-96.15234375, 77.27385473785675]
         }
       },
       {
@@ -580,7 +580,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [92.724609375, 21.820707853875017]
+          coordinates: [-85.25390625, 76.76054111175671]
         }
       },
       {
@@ -588,7 +588,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [93.2958984375, 20.591652120829167]
+          coordinates: [-114.60937499999999, 76.10079606754579]
         }
       },
       {
@@ -596,7 +596,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [94.833984375, 16.341225619207496]
+          coordinates: [-104.0625, 75.45307133006602]
         }
       },
       {
@@ -604,7 +604,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [90.4833984375, 25.60190226111573]
+          coordinates: [-95.625, 74.06786624952264]
         }
       },
       {
@@ -612,7 +612,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [89.6484375, 26.980828590472107]
+          coordinates: [-97.03125, 71.46912418989677]
         }
       },
       {
@@ -620,7 +620,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [91.23046875, 26.980828590472107]
+          coordinates: [-87.36328125, 75.0956327285438]
         }
       },
       {
@@ -628,7 +628,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [92.548828125, 27.01998400798257]
+          coordinates: [-108.80859375, 73.27735320192473]
         }
       },
       {
@@ -636,7 +636,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [93.779296875, 27.059125784374068]
+          coordinates: [-119.00390625, 73.02259157147301]
         }
       },
       {
@@ -644,7 +644,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [94.74609375, 26.70635985763354]
+          coordinates: [-94.5703125, 68.72044056989829]
         }
       },
       {
@@ -652,7 +652,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [93.8671875, 25.997549919572112]
+          coordinates: [-90.3515625, 65.94647177615738]
         }
       },
       {
@@ -660,7 +660,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [92.8125, 25.997549919572112]
+          coordinates: [-95.09765625, 63.23362741232569]
         }
       },
       {
@@ -668,7 +668,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [91.7138671875, 25.839449402063185]
+          coordinates: [-98.0859375, 59.44507509904714]
         }
       },
       {
@@ -676,7 +676,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [99.00878906249999, 17.26672782352052]
+          coordinates: [-93.8671875, 55.57834467218206]
         }
       },
       {
@@ -684,7 +684,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [98.0419921875, 16.46769474828897]
+          coordinates: [-86.484375, 53.4357192066942]
         }
       },
       {
@@ -692,7 +692,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [98.4375, 15.156973713377667]
+          coordinates: [-112.8515625, 71.35706654962706]
         }
       },
       {
@@ -700,7 +700,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [98.8330078125, 14.093957177836224]
+          coordinates: [-107.05078125, 69.59589006237648]
         }
       },
       {
@@ -708,7 +708,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [99.1845703125, 12.85464890558895]
+          coordinates: [-101.77734374999999, 66.37275500247455]
         }
       },
       {
@@ -716,7 +716,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [99.2724609375, 11.695272733029402]
+          coordinates: [-110.56640625, 66.16051056018838]
         }
       },
       {
@@ -724,7 +724,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [101.4697265625, 21.53484700204879]
+          coordinates: [-118.47656249999999, 67.40748724648756]
         }
       },
       {
@@ -732,7 +732,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [101.5576171875, 18.06231230454674]
+          coordinates: [-127.44140625, 68.26938680456564]
         }
       },
       {
@@ -740,7 +740,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [103.9306640625, 18.60460138845525]
+          coordinates: [-134.296875, 67.941650035336]
         }
       },
       {
@@ -748,7 +748,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [105.029296875, 17.5602465032949]
+          coordinates: [-142.3828125, 68.5924865825295]
         }
       },
       {
@@ -756,7 +756,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [105.732421875, 16.551961721972525]
+          coordinates: [-150.99609375, 69.47296854140573]
         }
       },
       {
@@ -764,183 +764,7 @@ const elephantLocations = [
         properties: {},
         geometry: {
           type: "Point",
-          coordinates: [106.171875, 14.604847155053898]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [107.22656249999999, 14.26438308756265]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [107.3583984375, 13.539200668930816]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [107.7978515625, 12.254127737657381]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [106.083984375, 11.867350911459308]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [104.2822265625, 10.876464994816295]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [102.9638671875, 13.368243250897299]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [102.7880859375, 4.784468966579362]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [101.97509765625, 5.156598738411155]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [102.10693359375, 4.368320420876243]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [102.83203125, 3.886177033699361]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [102.1728515625, 3.6888551431470478]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [102.67822265625, 3.1843944923387464]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [103.1396484375, 2.5699386165358966]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [103.60107421874999, 1.867345112921926]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [95.97656249999999, 4.718777551249855]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [97.93212890625, 3.8642546157214084]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [101.337890625, 0.6591651462894632]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [102.0849609375, -0.7470491450051796]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [103.18359375, -1.9771465537125645]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [104.1064453125, -2.8991526985043006]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [105.29296874999999, -3.864254615721396]
-        }
-      },
-      {
-        type: "Feature",
-        properties: {},
-        geometry: {
-          type: "Point",
-          coordinates: [105.0732421875, -5.0909441750333855]
+          coordinates: [-159.08203125, 69.59589006237648]
         }
       }
     ]
