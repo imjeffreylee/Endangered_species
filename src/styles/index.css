@@ -28,11 +28,14 @@ header {
 
 h1 {
   font-size: 48px;
-  color: #CC3300;
+  color: transparent;
   margin-top: 25px;
   overflow: hidden;
   white-space: nowrap;
-  animation: fade 3s infinite;
+  background-image: url(../../assets/images/tenor.gif);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 
 h1, .checkbox-container {
