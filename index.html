@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="./src/styles/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/styles/index.css" type="text/css">
+  <link rel="stylesheet" href="./src/styles/animation.css">
+  <link rel="stylesheet" href="./src/styles/top_list.css">
+
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/topojson.v1.min.js"></script>
 
@@ -29,37 +32,41 @@
   <section class="container">
     <div class="chart-container">
       <div class="checklist-container">
+        <div class="checklist-box">
           <div class="checkbox-container">
             <input class="regular-checkbox" type="checkbox" name="elephant" id="elephant">
-            <p>ELEPHANT</p>
+            <p class="species" data-species="elephant">ELEPHANT</p>
           </div>
           <div class="checkbox-container">
             <input class="regular-checkbox" type="checkbox" name="polar-bear" id="polar-bear">
-            <p>POLAR BEAR</p>
+            <p class="species" data-species="polarBear">POLAR BEAR</p>
           </div>
           <div class="checkbox-container">
             <input class="regular-checkbox" type="checkbox" name="giant-panda" id="giant-panda">
-            <p>GIANT PANDA</p>
+            <p class="species" data-species="giantPanda">GIANT PANDA</p>
           </div>
           <div class="checkbox-container">
             <input class="regular-checkbox" type="checkbox" name="sea-turtle" id="sea-turtle">
-            <p>SEA TURTLE</p>
+            <p class="species" data-species="seaTurtle">SEA TURTLE</p>
           </div>
           <div class="checkbox-container">
             <input class="regular-checkbox" type="checkbox" name="rhino" id="rhino">
-            <p>RHINO</p>
+            <p class="species" data-species="rhino">RHINO</p>
           </div>
           <div class="checkbox-container">
             <input class="regular-checkbox" type="checkbox" name="dolphin" id="dolphin">
-            <p>DOLPHIN</p>
+            <p class="species" data-species="dolphin">DOLPHIN</p>
           </div>
+        </div>
       </div>
-      <div class="top-3-endangered-container"></div>
+      <div id="top-3"></div>
+      <img class="wall" src="./assets/images/smashed_wall.png" alt="wall">
     </div>
     <div class="globe-container">
       <div id="globe"></div>
     </div>
   </section>
   <script src="./src/index.js" type="text/javascript"></script>
+  <script src="./src/script/handle_threat_list.js" type="text/javascript"></script>
 </body>
 </html>

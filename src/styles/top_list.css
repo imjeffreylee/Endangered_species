@@ -1,0 +1,41 @@
+#top-3 {
+  width: 400px;
+  height: 300px;
+  z-index: 1;
+}
+
+#top-3 li {
+  font-family: 'Electrolize', sans-serif;
+  color: #ff0000;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+#top-3 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  margin-left: 3em;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: .3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+img.wall {
+  position: absolute;
+  height: auto;
+  width: 60em;
+  z-index: 0;
+  bottom: 0;
+}
+
+/* .active {
+  animation-name: fadeOut;
+  animation-delay: .3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+} */

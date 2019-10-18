@@ -23,27 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
     .range([0, 360]);
   
   let locations = [];
-
-  // let locations = elephantLocations
-  //   .concat(polarBearLocations)
-  //   .concat(giantPandaLocations)
-  //   .concat(seaTurtleLocations)
-  //   .concat(rhinoLocations)
-  //   .concat(dolphinLocations);
-
   const elephant = document.getElementById("elephant");
   const polarBear = document.getElementById("polar-bear");
   const panda = document.getElementById("giant-panda");
   const turtle = document.getElementById("sea-turtle");
   const rhino = document.getElementById("rhino");
   const dolphin = document.getElementById("dolphin");
-
-  // elephant.addEventListener("change", drawDots);
-  // polarBear.addEventListener("change", drawDots);
-  // panda.addEventListener("change", drawDots);
-  // turtle.addEventListener("change", drawDots);
-  // rhino.addEventListener("change", drawDots);
-  // dolphin.addEventListener("change", drawDots);
 
   elephant.addEventListener("change", concatElephant);
   polarBear.addEventListener("change", concatPolarBear);
