@@ -30,3 +30,7 @@ a {
 a:hover {
 	transition: .3s;
 }
+
+input:focus {
+	outline: none;
+}

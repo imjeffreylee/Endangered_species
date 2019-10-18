@@ -1,32 +1,10 @@
+body {
+  background: black;
+}
+
 header {
   display: flex;
   justify-content: center;
-}
-
-h1 {
-  font-size: 48px;
-  color: #CC3300;
-  margin-top: 25px;
-}
-
-h1, li {
-  font-weight: bold;
-  font-family: 'Electrolize', sans-serif;
-}
-
-li {
-  font-size: 36px;
-  display: flex;
-  align-items: center;
-}
-
-li > input {
-  width: 10px;
-  height: auto;
-}
-
-body {
-  background: black;
 }
 
 .container {
@@ -41,17 +19,90 @@ body {
   align-items: center;
 }
 
+h1 {
+  font-size: 48px;
+  color: #CC3300;
+  margin-top: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: fade 3s infinite;
+}
+
+@keyframes fade {
+  from { opacity: 1.0; }
+  50% { opacity: 0.35; }
+  to { opacity: 1.0; }
+}
+
+h1, .checkbox-container {
+  font-weight: bold;
+  font-family: 'Electrolize', sans-serif;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container p {
+  font-size: 36px;
+}
+
+.checkbox-container:hover {
+  opacity: .35;
+  transition: .8s;
+}
+
+.regular-checkbox {
+  -webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	position: relative;
+}
+
+.regular-checkbox:hover {
+  cursor: pointer;
+}
+
+.regular-checkbox:checked {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+.regular-checkbox:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+}
+
+/* .big-checkbox {
+	padding: 18px;
+} */
+
+/* .big-checkbox:checked:after {
+	font-size: 28px;
+	left: 6px;
+} */
+
 .checklist-container {
   width: 400px;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-left: 9em;
 }
 
 .top-3-endangered-container {
-  border: 1px solid black;
   width: 400px;
   height: 300px;
 }
@@ -63,4 +114,3 @@ body {
   justify-content: center;
   align-items: center;
 }
-
