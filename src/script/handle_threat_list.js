@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleList(e) {
     e.preventDefault();
     if (e.target.className.includes("active")) {
+      // debugger
+      // list.firstElementChild.style.animation = "fadeOut .3s 2s";
       list.innerHTML = "";
       for (let i = 0; i < species.length; i++) {
         species[i].classList.remove("active");
