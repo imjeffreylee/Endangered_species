@@ -6,22 +6,22 @@ document.addEventListener("DOMContentLoaded", () => {
     .append("svg")
     .attr("width", width)
     .attr("height", height);
-  
-  const markerGroup = svg.append('g');
+
+  const markerGroup = svg.append("g");
 
   const projection = d3
     .geoOrthographic()
     .scale(300)
     .translate([width / 2, height / 2])
     .clipAngle(94);
-    
+
   const path = d3.geoPath().projection(projection);
 
   const y = d3
     .scaleLinear()
     .domain([0, width])
     .range([0, 360]);
-  
+
   let locations = [];
   const elephant = document.getElementById("elephant");
   const polarBear = document.getElementById("polar-bear");
@@ -102,11 +102,25 @@ document.addEventListener("DOMContentLoaded", () => {
       .enter()
       .append("circle")
       .merge(markers)
-      .attr("cx", d => projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[0])
-      .attr("cy", d => projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[1])
+      .attr(
+        "cx",
+        d =>
+          projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[0]
+      )
+      .attr(
+        "cy",
+        d =>
+          projection([d.geometry.coordinates[0], d.geometry.coordinates[1]])[1]
+      )
       .attr("fill", d => {
-        const coordinate = [d.geometry.coordinates[0], d.geometry.coordinates[1]];
-        let distance = d3.geoDistance(coordinate, projection.invert([ width / 2, height / 2 ]));
+        const coordinate = [
+          d.geometry.coordinates[0],
+          d.geometry.coordinates[1]
+        ];
+        let distance = d3.geoDistance(
+          coordinate,
+          projection.invert([width / 2, height / 2])
+        );
         return distance > 1.5 ? "none" : "red";
       })
       .attr("r", 3);
@@ -121,8 +135,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .datum(topojson.feature(world, world.objects.land))
     .attr("d", path);
 
-
-  // let scrollSpeed = 5000;
   let scrollSpeed = 50;
   let current = 0;
 
@@ -133,9 +145,9 @@ document.addEventListener("DOMContentLoaded", () => {
       .selectAll("path")
       .attr("d", path)
       .style("opacity", ".5");
-      drawDots();
+    drawDots();
   }
-  
+
   function drawLines() {
     const graticule = d3.geoGraticule().step([12, 12]);
     svg
@@ -148,4 +160,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   drawLines();
   setInterval(rotateGlobe, scrollSpeed);
-})
+});
