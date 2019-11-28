@@ -138,11 +138,11 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           }
           break;
-  
+
         default:
           list.innerHTML = "";
           break;
       }
     }
   }
-})
+});
