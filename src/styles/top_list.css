@@ -9,7 +9,6 @@
   color: #ff0000;
   font-size: 25px;
   font-weight: bold;
-  /* text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000; */
 }
 
 #top-3 ul {
@@ -32,10 +31,3 @@ img.wall {
   z-index: 0;
   bottom: 0;
 }
-
-/* .active {
-  animation-name: fadeOut;
-  animation-delay: .3s;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-} */
